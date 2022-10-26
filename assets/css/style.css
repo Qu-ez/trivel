@@ -13,38 +13,6 @@
     box-sizing: border-box;
   }
   
-  .bg-image {
-    /* Full height */
-    height: 50%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Images used */
-  .img1 { background-image: url("./images/6.jpg"); }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
-    position: fixed; /* Stay fixed */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  
   body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #5b675f;
@@ -92,6 +60,99 @@
     font-weight: lighter;
     font-size: 22px;
   }
+  .hero {
+        display: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
   
   footer {
     background: #5b675f;
@@ -183,35 +244,6 @@
     margin: 0 auto;
   }
   
-  .steps {
-    text-align: center;
-    background: #5b675f;
-  }
-  
-  .steps div {
-    margin-bottom: 80px;
-  }
-  
-  .steps img {
-    width: 15%;
-    margin: 10px 0;
-  }
-  
-  .steps h3 {
-    color: #0E2818;
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  
-  .steps p {
-    color: #0E2818;
-    font-size: 23px;
-  }
-  
-  .steps span {
-    font-size: 38px;
-  }
-  
   .section-title {
     font-size: 55px;
     color: #0E2818;
@@ -228,46 +260,7 @@
   .secondary-border {
     border-color: #5b675f;
   }
-  
-  .trainers {
-    text-align: center;
-  }
-  
-  .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto;
-    background: #5b675f;
-    color: #0E2818;
-    overflow: auto;
-  }
-  
-  .trainer img {
-    width: 35%;
-    float: left;
-  }
-  
-  .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 26px;
-    margin-bottom: 25px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-    line-height: 1.3;
-  }
-  
+
   .text-left {
     text-align: left;
   }
@@ -297,7 +290,7 @@
     vertical-align: top;
     text-align: left;
     margin: 30px 0 0 60px;
-    color: white;
+    color: #5b675f;
   }
   
   .contact-info h3 {

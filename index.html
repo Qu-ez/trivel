@@ -17,11 +17,8 @@
       </a>
     </h1>
     <nav>
-      <!-- Unordered list element -->
       <ul>
-        <!-- List item element-->
         <li>
-          <!-- Anchor element -->
           <a href="#who-we-are">Who We Are</a>
         </li>
         <li>
@@ -34,44 +31,110 @@
     </nav>
   </header>
 
-  <!-- hero/jumbotron -->
-  <section class="hero">
-    <div class="hero-form">
-      <p>Fill out this form to schedule a consultation</p>
-      <form>
-        <label for="name">Enter full name:</label>
-        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
-        <label for="email">Enter email address:</label>
-        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
-        <label for="phone">Enter a telephone number:</label>
-        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-        <button type="submit">
-          Enter
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- "what we do" section -->
   <section id="who-we-are" class="intro">
-    <h2 class="section-title primary-border">What We Do</h2>
+    <h2 class="section-title primary-border">Who We Are</h2>
     <p>
       TriVel Construction, Inc. is a commercial General Contractor who has been completing work in the Sacramento and surrounding area with over 20 years of experience. We specialize in full Design Build Projects to Plan and spec projects. We can complete a job from conceptual to finish, working with our Mechanical, Electrical and Plumbing teams to provide a full-service project. We can also provide a design and permit package if needed.
     </p>
-    <div class="bg-image img1"></div>
 
-    <div class="bg-text">TriVel</div>
   </section>
 
-  <!-- "what you do" section -->
+  <!-- "what we do" section -->
   <section id="what-we-do" class="steps">
-    <h2 class="section-title secondary-border">What You Do</h2>
+    <h2 class="section-title secondary-border">What We Do</h2>
+    <h3>Specializing in:</h3>
+        <p>Design and Permits</p>
+        <p>Conceptual Designs</p>
+        <p>Concrete Tilt Up Builings</p>
+        <p>Wood Buildings</p>
+        <p>Structural Buildings</p>
+        <p>Commercial Tenant Improvements (TIs)</p>
+        <p>Remodels</p>
+        <p>Concrete</p>
+        <p>Interior Finishes</p>
 
+    </section>
+    <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="./images/6.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="./images/7.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="./images/12.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="./images/375.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="./images/376.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="./images/378.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./images/6.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/12.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/375.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/376.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/378.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+    <section class="hero">
+        <div class="hero-form">
+          <p>Fill out this form to schedule a consultation</p>
+          <form>
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+            <label for="email">Enter email address:</label>
+            <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
+            <label for="phone">Enter a telephone number:</label>
+            <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+            <button type="submit">
+              Enter
+            </button>
+          </form>
+        </div>
+      </section>
+  </section>  
     
-  <!-- "reach out" section -->
-  <section id="reach-out" class="contact">
-    <div id="contactUS" class="feature">
-        <section>
 <div id="copyright">
     <div>&copy; 2022 <span class="logo">Maggie Quez - TRIVEL Industries</span></div>
   </section>
