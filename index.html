@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <title>TriVel</title>
   <link rel="icon" type="image/png" href="./images/Final TriVel Logo TC (transparent).png">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="slideshow" href="./assets/js/site.js"/>
 </head>
 
 <body>
-  <!-- navigation -->
   <header>
     <h1>
-      <a href="/">
-        TRIVEL INDUSTRIES
+      <a href="logo.html">
+        TRIVEL CONTRUSTION INC.
       </a>
     </h1>
     <nav>
@@ -36,13 +36,44 @@
     <p>
       TriVel Construction, Inc. is a commercial General Contractor who has been completing work in the Sacramento and surrounding area with over 20 years of experience. We specialize in full Design Build Projects to Plan and spec projects. We can complete a job from conceptual to finish, working with our Mechanical, Electrical and Plumbing teams to provide a full-service project. We can also provide a design and permit package if needed.
     </p>
-
   </section>
+  <section class="img">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="./images/6.jpg" style="width:800px;height:500px;">
+        <img class="mySlides" src="./images/7.jpg" style="width:800px;height:500px;">
+        <img class="mySlides" src="./images/12.jpg" style="width:800px;height:500px;">
+        <img class="mySlides" src="./images/375.jpg" style="width:500px;height:600px;">
+        <img class="mySlides" src="./images/376.jpg" style="width:800px;height:500px;">
+        <img class="mySlides" src="./images/378.jpg" style="width:500px;height:600px;">
 
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+    
+  </section>
+    
   <!-- "what we do" section -->
-  <section id="what-we-do" class="steps">
-    <h2 class="section-title secondary-border">What We Do</h2>
-    <h3>Specializing in:</h3>
+  <section id="Specializing" class="intro">
+    <h2 class="section-title secondary-border">Specializing In:</h2>
         <p>Design and Permits</p>
         <p>Conceptual Designs</p>
         <p>Concrete Tilt Up Builings</p>
@@ -52,71 +83,8 @@
         <p>Remodels</p>
         <p>Concrete</p>
         <p>Interior Finishes</p>
-
     </section>
-    <!-- Container for the image gallery -->
-<div class="container">
 
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-        <img src="./images/6.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-        <img src="./images/7.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-        <img src="./images/12.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-        <img src="./images/375.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-        <img src="./images/376.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-        <img src="./images/378.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <!-- Thumbnail images -->
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="./images/6.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./images/7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./images/12.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./images/375.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./images/376.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="./images/378.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-      </div>
-    </div>
-  </div>
     <section class="hero">
         <div class="hero-form">
           <p>Fill out this form to schedule a consultation</p>
